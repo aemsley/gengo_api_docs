@@ -4,20 +4,20 @@ title: Authentication | Gengo API
 
 # Authentication
 
-API users must have a registered Gengo account to acquire a pair of keys - a public key (api_key), or token, and private key (private_key). The api_key is used to identify a user, and the private_key is used to authenticate each API call. The combination effectively functions as a username and password. Therefore you should keep the private_key (surprise, surprise!) private.
+API users must have a registered Gengo account to acquire a pair of keys - a public key (api\_key), or token, and private key (private\_key). The api\_key is used to identify a user, and the private\_key is used to authenticate each API call. The combination effectively functions as a username and password. Therefore you should keep the private_key (surprise, surprise!) private.
 
 The keys are created and retrieved from your user Account section.
 
-Every restricted (non public) REST call will need to be authenticated by Gengo. The process of making an authenticated request is simple, and is as follows:
+Every restricted (non-public) REST call will need to be authenticated by Gengo. The process of making an authenticated request is simple, and is as follows:
 
-## Signing Calls
+## Signing calls
 
 All authenticated calls must be signed. The process for signing is as follows:
 
-1. Get the current Unix epoch time as an integer
-2. Insert the time as the value to a 'ts' key in your argument list
-3. Calculate the SHA1 hash of the timestamp against your private key
-4. Append the value of this hash to the argument list as a parameter named api_sig
+1. Get the current Unix epoch time as an integer.
+2. Insert the time as the value to a 'ts' key in your argument list.
+3. Calculate the SHA1 hash of the timestamp against your private key.
+4. Append the value of this hash to the argument list as a parameter named api_sig.
 
 ## Example API authenticated call
 

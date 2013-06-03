@@ -4,187 +4,145 @@ title: Error codes | Gengo API
 
 # Error codes
 
-Code values let you map your own localized message, and msg values are just sample error messages.
+Code values let you map your own localized message. The msg values are sample error messages.
 
-* 1000
-: Authentication failed
+**1000**
+: Authentication failed.
 
-* 1100
-: api_sig is a required field
+**1100**
+: api_sig is a required field.
 
-* 1150
-: api_key is a required field
+**1150**.
+: api_key is a required field.
 
-* 1200
-: ts is a required field
+**1200**
+: ts is a required field.
 
-* 1201
+**1201**
 : ts must be numeric
 
-* 1250
-: data is a required field
+**1250**
+: data is a required field.
 
-* 1251
-: JSON data cannot be decoded
+**1251**
+: JSON data cannot be decoded.
 
-* 1300
-: type is a required field
+**1300**
+: type is a required field.
 
-* 1301
-: job_type is not supported
+**1301**
+: job_type is not supported.
 
-* 1302
-: identifier missing
+**1350**
+: body_src is a required field.
 
-* 1303
-: quote missing
+**1351**
+: Invalid body text.
 
-* 1304
-: invalid tier
+**1400**
+: lc_src is a required field.
 
-* 1305
-: quote number of files exceeds limit
+**1450**
+: lc_tgt is a required field.
 
-* 1306
-: quote file size exceeds limit
+**1500**
+: tier is a required field.
 
-* 1350
-: body_src is a required field
+**1551**
+: Language service is not supported.
 
-* 1351
-: Invalid body text
+**1601**
+: callback_url must be a valid URL.
 
-* 1352
-: content type invalid
+**1651**
+: auto_approve must be 0 or 1.
 
-* 1400
-: lc_src is a required field
+**1701**
+: use_preferred must be 0 or 1.
 
-* 1450
-: lc_tgt is a required field
+**1751**
+: "custom_data" is over maximum storage limit (1kb).
 
-* 1500
-: tier is a required field
+**1800**
+: jobs is a required field.
 
-* 1501
-: filename is a required field
+**1851**
+: as_group must be 0 or 1.
 
-* 1551
-: language service is not supported
+**1901**
+: process must be 0 or 1.
 
-* 1601
-: callback_url must be a valid URL
+**1950**
+: Jobs cannot be grouped (they have different tiers, source or target languages).
 
-* 1651
-: auto_approve must be 0 or 1
+**1951**
+: A single job cannot be grouped.
 
-* 1701
-: use_preferred must be 0 or 1
+**1952**
+: Ultra jobs cannot be grouped.
 
-* 1751
-: "custom_data" is over maximum storage limit (1kb)
+**2000**
+: body is a required field.
 
-* 1754
-: system detected an identical payload within a 5 minute window
+**2050**
+: job_id is a required field.
 
-* 1800
-: jobs is a required field
+**2100**
+: Unauthorized job access.
 
-* 1801
-: jobs files mismatch
+**2150**
+: revision_id is a required field.
 
-* 1802
-: file upload failed (did you check that the file is correct and the extension supported?)
+**2200**
+: Unauthorized revision access.
 
-* 1803
-: missing file key
+**2250**
+: Job is not reviewable.
 
-* 1804
-: jobs identifier missing
+**2251**
+: Job cannot be purchased (incorrect state).
 
-* 1851
-: as_group must be 0 or 1
+**2252**
+: Job cannot be cancelled (incorrect state).
 
-* 1852
-: allow fork is invalid
+**2300**
+: comment is a required field.
 
-* 1901
-: process must be 0 or 1
+**2350**
+: reason is a required field.
 
-* 1950
-: These jobs cannot be grouped (they have different tiers, source or target languages)
+**2400**
+: captcha is a required field.
 
-* 1951
-: You cannot group a single job
+**2401**
+: Invalid captcha challenge.
 
-* 1952
-: Ultra jobs cannot be grouped
+**2450**
+: Invalid follow-up value.
 
-* 2000
-: body is a required field
+**2500**
+: rating is a required field.
 
-* 2050
-: job_id is a required field
+**2501**
+: services\_api\_error\_codes\_rating_restriction
 
-* 2100
-: Unauthorized job access
+**2502**
+: services\_api\_error\_codes\_rating_restriction
 
-* 2150
-: revision_id is a required field
+**2550**
+: Group ID is missing.
 
-* 2200
-: Unauthorized revision access
-
-* 2250
-: Job is not reviewable
-
-* 2251
-: Job cannot be purchased (incorrect state)
-
-* 2252
-: Job cannot be cancelled (incorrect state)
-
-* 2300
-: comment is a required field
-
-* 2350
-: reason is a required field
-
-* 2400
-: captcha is a required field
-
-* 2401
-: Invalid captcha challenge
-
-* 2450
-: Invalid follow-up value
-
-* 2500
-: rating is a required field
-
-* 2501
-: services_api_error_codes_rating_restriction
-
-* 2502
-: services_api_error_codes_rating_restriction
-
-* 2503
-: public flag must be a boolean
-
-* 2550
-: Jobs' group id is missing
-
-* 2600
+**2600**
 : Unauthorized job group access
 
-* 2650
+**2650**
 : Invalid job status
 
-* 2700
-: Not enough credits - please top up
+**2700**
+: Not enough credits, please add more.
 
-* 2750
-: Unauthorized order access
+**2750**
+: Unauthorized order access.
 
-* 2800
-: API temporarily unavailable
+**2800**
+: API temporarily unavailable.

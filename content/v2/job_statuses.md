@@ -1,25 +1,27 @@
 ---
-title: Job statuses | Gengo API
+title: Job Statuses | Gengo API
 ---
 
 # Job statuses
+Every job always has one of the following statuses:
 
-Each submitted job goes through a series of statuses before delivery. At any time when you request the contents of a job, it will be in one of the following states:
+**unpaid**
+: Not enough funds to translate
 
-`available`
-: Ready for a translator to take the job for translation.
+**available**
+: Awaiting translator
 
-`pending`
-: Currently being translated.
+**pending**
+: Translating
 
-`reviewable`
-: Translation has finished and is awaiting submitter approval.
+**reviewable**
+: Translated and awaiting approval
 
-`approved`
-: Submitter has approved the translation.
+**approved**
+: User-approved translation
 
-`rejected`
-: Translation has been rejected and is no longer available.
+**rejected**
+: User-rejected translation, awaiting new translator
 
-`canceled`
-: Translation has been canceled before being picked up, and is no longer available.
+**canceled**
+: User canceled the translation before it began or when rejecting it

@@ -2,27 +2,28 @@
 title: Sandbox Testing | Gengo API
 ---
 
-# Sandbox testing
+# Sandbox Testing
 
-### The testing area for your API code.
+The sandbox is a testing area for your API code.
 
-What’s different about the sandbox?
+## What’s different about the sandbox?
+In the sandbox:
 
-* You can add free credits to your account at will, for testing.
-* You can trigger the "completion" of your translation jobs (i.e. be a faux translator) so that you can test what your code does in response.
-* In the sandbox, toggling between job states (e.g. pending to reviewable etc) _does not_ trigger callbacks
-* To tetst callbacks in the sandbox, click the __Send Callback__ button
-* Additional controls for you to manually trigger job status changes and other actions, so that you can test your callbacks.
-* The sandbox jobs database may occasionally be wiped clean to prepare it for new features. As such you should not rely on the sandbox for permanent storage.
+* You can add free credits to your account for testing.
+* You can trigger the "completion" of your translation jobs (i.e. be a faux translator) so that you can test how your code responds.
+* Toggling between job states (for example, from pending to reviewable) _does not_ trigger callbacks. To test callbacks in the sandbox, click the __Send Callback__ button.
+* Additional controls are present, allowing you to manually trigger job status changes and other actions, so that you can test your callbacks.
+
+__Important!__ The sandbox jobs database may occasionally be wiped clean to prepare it for new features, so you should not rely on the sandbox for permanent storage.
 
 ## How to use the sandbox
 
-* Check out the <a href='/'>developer documentation</a>.
-* Create your sandbox account
-* Log in and visit your Account API Keys page to generate a set of sandbox API keys.
-* Test your app, using http://api.sandbox.gengo.com/v2/ as the base call URL.
-* Ready to deploy? Head over to the live <a href='http://gengo.com'>gengo.com</a> site. Create a full user account, generate a set of live API keys - and remember to paste them into your app.
+1. Read the <a href="/">developer documentation</a>.
+2. Create a <a href="http://sandbox.mygengo.com">sandbox account</a>.
+3. Log in and visit your Account API Keys page to generate a set of sandbox API keys.
+4. Test your app, using http://api.sandbox.mygengo.com/v2/ as the base call URL.
+5. Ready to deploy? 
+	1. Head  to the live <a href="http://gengo.com">gengo.com</a> site. 
+	2. Create a full user account.
+	3. Generate a set of live API keys (and remember to paste them into your app!).
 
-## Ready? Get started on the sandbox.
-
-Create your <a href='http://sandbox.gengo.com'>sandbox account</a>
